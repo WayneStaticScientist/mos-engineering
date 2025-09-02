@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./assets/css/style.css";
+import "./assets/css/bootstrap.min.css";
+import "./assets/css/fontawesome.min.css";
+import "./assets/css/swiper-bundle.min.css";
+import "./assets/css/magnific-popup.min.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +34,22 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Script src="/assets/js/vendor/jquery-3.7.1.min.js"></Script>
+        <Script src="/assets/js/swiper-bundle.min.js"></Script>
+        <Script src="/assets/js/bootstrap.min.js"></Script>
+        <Script src="/assets/js/jquery.magnific-popup.min.js"></Script>
+        <Script src="/assets/js/jquery.counterup.min.js"></Script>
+        <Script src="/assets/js/circle-progress.js"></Script>
+        <Script src="/assets/js/jquery-ui.min.js"></Script>
+        <Script src="/assets/js/imagesloaded.pkgd.min.js"></Script>
+        <Script src="/assets/js/isotope.pkgd.min.js"></Script>
+        <Script src="/assets/js/nice-select.min.js"></Script>
+        <Script src="/assets/js/wow.min.js"></Script>
+        <Script src="/assets/js/gsap.min.js"></Script>
+        <Script src="/assets/js/ScrollTrigger.min.js"></Script>
+        <Script src="/assets/js/SplitText.min.js"></Script>
+        <Script src="/assets/js/lenis.min.js"></Script>
+        <Script src="/assets/js/main.js"></Script>
       </body>
     </html>
   );
