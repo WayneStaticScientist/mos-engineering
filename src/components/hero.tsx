@@ -1,3 +1,4 @@
+import { HeroSliderContent } from "@/lib/tools-hero-slider";
 import React from "react";
 
 export default function HeroSection() {
@@ -9,214 +10,53 @@ export default function HeroSection() {
         data-slider-options='{"effect":"fade"}'
       >
         <div className="swiper-wrapper">
-          <div className="swiper-slide">
-            <div className="hero-inner">
-              <div
-                className="th-hero-bg"
-                data-bg-src="assets/img/hero/hero_bg_1_1.jpg"
-              >
-                <div
-                  className="hero-shape-1"
-                  data-ani="slideinleft"
-                  data-ani-delay="0.7s"
-                >
-                  <img src="assets/img/bg/hero_overlay_1.png" alt="" />
-                </div>
-              </div>
-              <div className="container">
-                <div className="hero-style1">
-                  <span
-                    className="sub-title"
-                    data-ani="slideindown"
-                    data-ani-delay="0.2s"
-                  >
-                    Empower Your Future With
-                  </span>
-                  <h1
-                    className="hero-title"
-                    data-ani="slideinleft"
-                    data-ani-delay="0.4s"
-                  >
-                    Solar
-                    <span className="hero-img">
-                      <img src="assets/img/shape/hero-shape.svg" alt="" />
-                    </span>
-                    Power Energy
-                  </h1>
+          {HeroSliderContent.map((node, index) => (
+            <div className="swiper-slide" key={index}>
+              <div className="hero-inner">
+                <div className="th-hero-bg" data-bg-src={node.image}>
                   <div
-                    className="btn-group justify-content-lg-start justify-content-center"
-                    data-ani="slideinup"
-                    data-ani-delay="0.6s"
+                    className="hero-shape-1"
+                    data-ani="slideinleft"
+                    data-ani-delay="0.7s"
                   >
-                    <a href="contact.html" className="th-btn style1 th-icon">
-                      <span
-                        className="btn-text"
-                        data-back="Get A Quote"
-                        data-front="Get A Quote"
-                      />
-                      <i className="fa-regular fa-arrow-right ms-2" />
-                    </a>
+                    <img src="/assets/img/bg/hero_overlay_1.png" alt="" />
+                  </div>
+                </div>
+                <div className="container">
+                  <div className="hero-style1">
+                    <span
+                      className="sub-title"
+                      data-ani="slideindown"
+                      data-ani-delay="0.2s"
+                    >
+                      {node.message}
+                    </span>
+                    <h3
+                      className="hero-title tw:text-6xl!"
+                      data-ani="slideinleft"
+                      data-ani-delay="0.4s"
+                    >
+                      {node.title}
+                    </h3>
+                    <div
+                      className="btn-group justify-content-lg-start justify-content-center"
+                      data-ani="slideinup"
+                      data-ani-delay="0.6s"
+                    >
+                      <a href="/" className="th-btn style1 th-icon">
+                        <span
+                          className="btn-text"
+                          data-back="Become A member"
+                          data-front="Become A member"
+                        />
+                        <i className="fa-regular fa-arrow-right ms-2" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="swiper-slide">
-            <div className="hero-inner">
-              <div
-                className="th-hero-bg"
-                data-bg-src="assets/img/hero/hero_bg_1_2.jpg"
-              >
-                <div
-                  className="hero-shape-1"
-                  data-ani="slideinleft"
-                  data-ani-delay="0.7s"
-                >
-                  <img src="assets/img/bg/hero_overlay_1.png" alt="" />
-                </div>
-              </div>
-              <div className="container">
-                <div className="hero-style1">
-                  <span
-                    className="sub-title"
-                    data-ani="slideindown"
-                    data-ani-delay="0.2s"
-                  >
-                    Empower Your Future With
-                  </span>
-                  <h1
-                    className="hero-title"
-                    data-ani="slideinleft"
-                    data-ani-delay="0.4s"
-                  >
-                    Powering
-                    <span className="hero-img">
-                      <img src="assets/img/shape/hero-shape.svg" alt="" />
-                    </span>
-                    Solar Energy
-                  </h1>
-                  <div
-                    className="btn-group justify-content-lg-start justify-content-center"
-                    data-ani="slideinup"
-                    data-ani-delay="0.6s"
-                  >
-                    <a href="contact.html" className="th-btn style1 th-icon">
-                      <span
-                        className="btn-text"
-                        data-back="Get A Quote"
-                        data-front="Get A Quote"
-                      />
-                      <i className="fa-regular fa-arrow-right ms-2" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="swiper-slide">
-            <div className="hero-inner">
-              <div
-                className="th-hero-bg"
-                data-bg-src="assets/img/hero/hero_bg_1_3.jpg"
-              >
-                <div
-                  className="hero-shape-1"
-                  data-ani="slideinleft"
-                  data-ani-delay="0.7s"
-                >
-                  <img src="assets/img/bg/hero_overlay_1.png" alt="" />
-                </div>
-              </div>
-              <div className="container">
-                <div className="hero-style1">
-                  <span
-                    className="sub-title"
-                    data-ani="slideindown"
-                    data-ani-delay="0.2s"
-                  >
-                    Empower Your Future With
-                  </span>
-                  <h1
-                    className="hero-title"
-                    data-ani="slideinleft"
-                    data-ani-delay="0.4s"
-                  >
-                    Harvesting
-                    <span className="hero-img">
-                      <img src="assets/img/shape/hero-shape.svg" alt="" />
-                    </span>
-                    Suns Power
-                  </h1>
-                  <div
-                    className="btn-group justify-content-lg-start justify-content-center"
-                    data-ani="slideinup"
-                    data-ani-delay="0.6s"
-                  >
-                    <a href="contact.html" className="th-btn style1 th-icon">
-                      <span
-                        className="btn-text"
-                        data-back="Get A Quote"
-                        data-front="Get A Quote"
-                      />
-                      <i className="fa-regular fa-arrow-right ms-2" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="swiper-slide">
-            <div className="hero-inner">
-              <div
-                className="th-hero-bg"
-                data-bg-src="assets/img/hero/hero_bg_1_4.jpg"
-              >
-                <div
-                  className="hero-shape-1"
-                  data-ani="slideinleft"
-                  data-ani-delay="0.7s"
-                >
-                  <img src="assets/img/bg/hero_overlay_1.png" alt="" />
-                </div>
-              </div>
-              <div className="container">
-                <div className="hero-style1">
-                  <span
-                    className="sub-title"
-                    data-ani="slideindown"
-                    data-ani-delay="0.2s"
-                  >
-                    Empower Your Future With
-                  </span>
-                  <h1
-                    className="hero-title"
-                    data-ani="slideinleft"
-                    data-ani-delay="0.4s"
-                  >
-                    Sun
-                    <span className="hero-img">
-                      <img src="assets/img/shape/hero-shape.svg" alt="" />
-                    </span>
-                    For Everyone
-                  </h1>
-                  <div
-                    className="btn-group justify-content-lg-start justify-content-center"
-                    data-ani="slideinup"
-                    data-ani-delay="0.6s"
-                  >
-                    <a href="contact.html" className="th-btn style1 th-icon">
-                      <span
-                        className="btn-text"
-                        data-back="Get A Quote"
-                        data-front="Get A Quote"
-                      />
-                      <i className="fa-regular fa-arrow-right ms-2" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
         <button
           data-slider-prev="#heroSlide"
