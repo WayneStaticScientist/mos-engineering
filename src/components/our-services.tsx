@@ -3,18 +3,18 @@ import React from "react";
 export default function OurServices() {
   return (
     <>
-      {" "}
       <section
         className="overflow-hidden space"
-        data-bg-src="assets/img/bg/service_bg_1.jpg"
+        data-bg-src="/assets/img/bg/service_bg_1.jpg"
       >
         <div className="container">
           <div className="row justify-content-lg-between justify-content-center align-items-center">
             <div className="col-lg-5">
               <div className="title-area text-center text-lg-start">
-                <span className="sub-title">Our Services</span>
+                <span className="sub-title">Our Comprehensive Services</span>
                 <h2 className="sec-title">
-                  Personalized Solar Solutions for Your Needs
+                  Delivering Expertise in Automation, Electrical, and Industrial
+                  Solutions.
                 </h2>
               </div>
             </div>
@@ -44,6 +44,7 @@ export default function OurServices() {
               data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"4"}}}'
             >
               <div className="swiper-wrapper">
+                {/* Service 1: Industrial Automation */}
                 <div className="swiper-slide">
                   <div className="service-card">
                     <div
@@ -65,13 +66,14 @@ export default function OurServices() {
                       </div>
                       <h3 className="box-title">
                         <a href="service-details.html">
-                          Solar Panel Installation
+                          PLC, HMI & SCADA Automation
                         </a>
                       </h3>
                       <p className="box-text">
-                        Our professional installation service ensures that your
-                        solar panels are set up efficiently and securely for
-                        maximum sunlight exposure.
+                        We specialize in **PLC, HMI, and SCADA systems**,
+                        providing comprehensive services from **coding and
+                        wiring** to **full system commissioning**. We are
+                        experts in implementing robust automation solutions.
                       </p>
                       <a
                         href="service.html"
@@ -79,14 +81,15 @@ export default function OurServices() {
                       >
                         <span
                           className="btn-text"
-                          data-back="Vew Details"
-                          data-front="Vew Details"
+                          data-back="View Details"
+                          data-front="View Details"
                         />
                         <i className="fa-regular fa-arrow-right ms-2" />
                       </a>
                     </div>
                   </div>
                 </div>
+                {/* Service 2: Electrical Engineering */}
                 <div className="swiper-slide">
                   <div className="service-card">
                     <div
@@ -108,13 +111,14 @@ export default function OurServices() {
                       </div>
                       <h3 className="box-title">
                         <a href="service-details.html">
-                          Battery Storage Solutions
+                          Electrical Engineering & Maintenance
                         </a>
                       </h3>
                       <p className="box-text">
-                        Store solar power with our cutting-edge battery
-                        solutions, providing energy independence and
-                        uninterrupted power. Whether.
+                        Our services cover all aspects of **electrical
+                        engineering**, including **cable termination** and
+                        general maintenance. We offer reliable solutions to keep
+                        your operations running smoothly and safely.
                       </p>
                       <a
                         href="service.html"
@@ -122,14 +126,15 @@ export default function OurServices() {
                       >
                         <span
                           className="btn-text"
-                          data-back="Vew Details"
-                          data-front="Vew Details"
+                          data-back="View Details"
+                          data-front="View Details"
                         />
                         <i className="fa-regular fa-arrow-right ms-2" />
                       </a>
                     </div>
                   </div>
                 </div>
+                {/* Service 3: Solar & Renewable Energy */}
                 <div className="swiper-slide">
                   <div className="service-card">
                     <div
@@ -151,13 +156,14 @@ export default function OurServices() {
                       </div>
                       <h3 className="box-title">
                         <a href="service-details.html">
-                          Solar Inverter Installation
+                          Solar Installations & Maintenance
                         </a>
                       </h3>
                       <p className="box-text">
-                        Our professional installation service ensures that your
-                        solar panels are set up efficiently and securely for
-                        maximum sunlight exposure.
+                        We provide complete **solar installation** services for
+                        both domestic and industrial applications. We also offer
+                        **solar maintenance** to ensure your system operates at
+                        peak efficiency for years to come.
                       </p>
                       <a
                         href="service.html"
@@ -165,14 +171,15 @@ export default function OurServices() {
                       >
                         <span
                           className="btn-text"
-                          data-back="Vew Details"
-                          data-front="Vew Details"
+                          data-back="View Details"
+                          data-front="View Details"
                         />
                         <i className="fa-regular fa-arrow-right ms-2" />
                       </a>
                     </div>
                   </div>
                 </div>
+                {/* Service 4: Industrial & Mining Supplies */}
                 <div className="swiper-slide">
                   <div className="service-card">
                     <div
@@ -194,13 +201,14 @@ export default function OurServices() {
                       </div>
                       <h3 className="box-title">
                         <a href="service-details.html">
-                          Solar Maintenance &amp; Repair
+                          Mining & Industrial Supplies
                         </a>
                       </h3>
                       <p className="box-text">
-                        Store solar power with our cutting-edge battery
-                        solutions, providing energy independence and
-                        uninterrupted power. Whether.
+                        We are a leading supplier of industrial and mining
+                        equipment. When you purchase from us, you get a
+                        **discounted installation service**, ensuring seamless
+                        integration of your new products.
                       </p>
                       <a
                         href="service.html"
@@ -208,94 +216,8 @@ export default function OurServices() {
                       >
                         <span
                           className="btn-text"
-                          data-back="Vew Details"
-                          data-front="Vew Details"
-                        />
-                        <i className="fa-regular fa-arrow-right ms-2" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="service-card">
-                    <div
-                      className="service-overlay"
-                      data-bg-src="assets/img/service/service_overlay_1.jpg"
-                    />
-                    <div className="box-content">
-                      <div className="box-icon">
-                        <img src="assets/img/icon/service_1_1.svg" alt="Icon" />
-                      </div>
-                      <div
-                        className="box-img"
-                        data-mask-src="assets/img/shape/ser-shape.png"
-                      >
-                        <img
-                          src="assets/img/service/service_1_1.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <h3 className="box-title">
-                        <a href="service-details.html">
-                          Solar Panel Installation
-                        </a>
-                      </h3>
-                      <p className="box-text">
-                        Our professional installation service ensures that your
-                        solar panels are set up efficiently and securely for
-                        maximum sunlight exposure.
-                      </p>
-                      <a
-                        href="service.html"
-                        className="th-btn border-btn th-icon fw-medium text-uppercase"
-                      >
-                        <span
-                          className="btn-text"
-                          data-back="Vew Details"
-                          data-front="Vew Details"
-                        />
-                        <i className="fa-regular fa-arrow-right ms-2" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="service-card">
-                    <div
-                      className="service-overlay"
-                      data-bg-src="assets/img/service/service_overlay_2.jpg"
-                    />
-                    <div className="box-content">
-                      <div className="box-icon">
-                        <img src="assets/img/icon/service_1_2.svg" alt="Icon" />
-                      </div>
-                      <div
-                        className="box-img"
-                        data-mask-src="assets/img/shape/ser-shape.png"
-                      >
-                        <img
-                          src="assets/img/service/service_1_2.jpg"
-                          alt="img"
-                        />
-                      </div>
-                      <h3 className="box-title">
-                        <a href="service-details.html">
-                          Battery Storage Solutions
-                        </a>
-                      </h3>
-                      <p className="box-text">
-                        Store solar power with our cutting-edge battery
-                        solutions, providing energy independence and
-                        uninterrupted power. Whether.
-                      </p>
-                      <a
-                        href="service.html"
-                        className="th-btn border-btn th-icon fw-medium text-uppercase"
-                      >
-                        <span
-                          className="btn-text"
-                          data-back="Vew Details"
-                          data-front="Vew Details"
+                          data-back="View Details"
+                          data-front="View Details"
                         />
                         <i className="fa-regular fa-arrow-right ms-2" />
                       </a>
@@ -307,6 +229,8 @@ export default function OurServices() {
           </div>
         </div>
       </section>
+
+      {/* This section remains the same as the context did not provide new info for it. */}
       <section className="bg-theme">
         <div className="container">
           <div className="row gx-0">

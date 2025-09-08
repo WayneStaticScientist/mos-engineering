@@ -76,13 +76,13 @@ export default function HeroSection() {
           <div className="row gy-4">
             <div className="col-xl-5 col-lg-4">
               <div className="hero-image global-img">
-                <img src="assets/img/hero/hero-img-1.jpg" alt="" />
+                <img src="/assets/img/hero/hero-img-1.jpg" alt="" />
               </div>
             </div>
             <div className="col-xl-3 col-lg-4">
               <div className="hero1-item">
-                <div className="box-icon">
-                  <img src="assets/img/icon/doller.svg" alt="" />
+                <div className="box-icon tw:flex! tw:items-center! tw:justify-center!">
+                  <img src="/assets/img/icon/doller.svg" alt="" />
                 </div>
                 <div className="box-content">
                   <h3 className="box-title">Cost Savings</h3>
@@ -96,7 +96,7 @@ export default function HeroSection() {
             </div>
             <div className="col-xl-4 col-lg-4">
               <div className="hero-image global-img">
-                <img src="assets/img/hero/hero-img-2.jpg" alt="" />
+                <img src="/assets/img/hero/hero-img-2.jpg" alt="" />
               </div>
             </div>
           </div>

@@ -10,39 +10,41 @@ export default function WhyChooseUs() {
               <div className="title-area mb-30">
                 <span className="sub-title">Why Choose Us</span>
                 <h2 className="sec-title">
-                  Our Solar Solutions Reach 100% Renewable
+                  Your Reliable Partner for Industrial Solutions
                 </h2>
               </div>
               <p className="mt-n2 mb-35">
-                We offer flexible financing options and guidance on government
-                incentives and tax credits. Our team helps make solar energy
-                affordable for everyone, ensuring you get the best value and
-                maximize your investment in clean energy.
+                We bring a wealth of technical expertise and hands-on experience
+                to every project. Our team is dedicated to providing tailored
+                solutions that meet your specific industrial and mining needs,
+                ensuring efficiency, safety, and long-term reliability.
               </p>
               <div className="about-feature-wrap">
                 <div className="about-feature">
                   <div className="box-icon">
-                    <img src="assets/img/icon/about_1_1.svg" alt="Icon" />
+                    <img src="/assets/img/icon/about_1_1.svg" alt="Icon" />
                   </div>
                   <div className="media-body">
-                    <h3 className="box-title">Professional Solar Expert</h3>
+                    <h3 className="box-title">Seasoned Industry Experts</h3>
                     <p className="box-text">
-                      Solar panels, also referred to as solar modules, are made
-                      up of multiple solar cells arranged in a grid. They are
-                      installed on rooftops, solar farms, and other suitable.
+                      Our professionals are highly skilled and have extensive
+                      backgrounds in electrical engineering, automation, and
+                      mining operations. We understand the unique challenges of
+                      the industry and deliver practical, effective solutions.
                     </p>
                   </div>
                 </div>
                 <div className="about-feature">
                   <div className="box-icon">
-                    <img src="assets/img/icon/about_1_2.svg" alt="Icon" />
+                    <img src="/assets/img/icon/about_1_2.svg" alt="Icon" />
                   </div>
                   <div className="media-body">
-                    <h3 className="box-title">24/7 Customer Support</h3>
+                    <h3 className="box-title">Reliable Customer Support</h3>
                     <p className="box-text">
-                      Solar panels, also referred to as solar modules, are made
-                      up of multiple solar cells arranged in a grid. They are
-                      installed on rooftops, solar farms, and other suitable..
+                      We pride ourselves on being accessible and responsive. Our
+                      team is committed to providing excellent support and
+                      service, ensuring your operations run smoothly with
+                      minimal downtime.
                     </p>
                   </div>
                 </div>
@@ -52,17 +54,7 @@ export default function WhyChooseUs() {
           <div className="col-xl-7 mb-30 mb-xl-0">
             <div className="img-box2 pe-xl-5 me-xl-2">
               <div className="img1 th-parallax">
-                <img src="assets/img/normal/about_1_2.jpg" alt="About" />
-              </div>
-              <div className="discount-wrapp style2">
-                <h2 className="box-counter">
-                  <span className="counter-number">36</span>
-                </h2>
-                <div className="discount-tag">
-                  <span className="discount-anime">
-                    years of experience in solar enargy
-                  </span>
-                </div>
+                <img src="/assets/img/normal/about_1_2.jpg" alt="About" />
               </div>
             </div>
           </div>

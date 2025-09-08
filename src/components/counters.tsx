@@ -10,11 +10,11 @@ export default function Counters() {
               <img src="assets/img/icon/counter_card_1_1.svg" alt="" />
             </div>
             <h3 className="box-number">
-              <span className="counter-number">10,000,000</span>+
+              <span className="counter-number">500</span>+
             </h3>
             <div className="media-body">
               <p className="box-text mb-n1">
-                Instances of fault activity captured on LV networks
+                Automation and PLC Projects Completed
               </p>
             </div>
           </div>
@@ -24,12 +24,10 @@ export default function Counters() {
               <img src="assets/img/icon/counter_card_1_2.svg" alt="" />
             </div>
             <h3 className="box-number">
-              <span className="counter-number">3,500,000</span>
+              <span className="counter-number">1000</span>+
             </h3>
             <div className="media-body">
-              <p className="box-text mb-n1">
-                Train pantographs inspected annually
-              </p>
+              <p className="box-text mb-n1">Electrical & Solar Installations</p>
             </div>
           </div>
           <div className="divider" />
@@ -38,11 +36,11 @@ export default function Counters() {
               <img src="assets/img/icon/counter_card_1_3.svg" alt="" />
             </div>
             <h3 className="box-number">
-              <span className="counter-number">20,000,000</span>+
+              <span className="counter-number">10</span>+
             </h3>
             <div className="media-body">
               <p className="box-text mb-n1">
-                Hours of LV circuit load profile data captured and analysed
+                Years of Combined Industry Experience
               </p>
             </div>
           </div>

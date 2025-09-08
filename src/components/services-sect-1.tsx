@@ -5,62 +5,86 @@ export default function ServicesCardList() {
     <div className="position-relative overflow-hidden space-top">
       <div className="container">
         <div className="row gy-4 justify-content-center">
+          {/* Card 1: Industrial Automation & PLCs */}
           <div className="col-md-6 col-xl-3">
             <div className="feature-card th-ani">
               <div className="box-icon">
-                <img src="assets/img/icon/feature_1_1.svg" alt="Icon" />
+                <img
+                  src="/assets/img/icon/feature_1_1.svg"
+                  alt="Automation Icon"
+                />
               </div>
               <h3 className="box-title">
-                <a href="service-details.html">Energy Solutions</a>
+                <a href="#">Industrial Automation & PLCs</a>
               </h3>
               <p className="box-text">
-                Solar panels with PV cells convert sunlight directly into
-                electricity. PV panels are often installed on rooftops, in solar
-                farms.
+                Specializing in PLC, HMI, and SCADA systems, we handle all
+                aspects of automation. Our services include troubleshooting,
+                maintenance, custom wiring, programming, and commissioning to
+                optimize your industrial processes.
               </p>
             </div>
           </div>
+
+          {/* Card 2: Solar & Electrical Services */}
           <div className="col-md-6 col-xl-3">
             <div className="feature-card th-ani">
               <div className="box-icon">
-                <img src="assets/img/icon/feature_1_2.svg" alt="Icon" />
+                <img
+                  src="/assets/img/icon/feature_1_2.svg"
+                  alt="Solar & Electrical Icon"
+                />
               </div>
               <h3 className="box-title">
-                <a href="service-details.html">Global Expertise</a>
+                <a href="#">Solar & Electrical Services</a>
               </h3>
               <p className="box-text">
-                Global expertise" refers to having a broad, in-depth
-                understanding, knowledge, and proficiency in a particular field
-                or subject
+                From full solar installations to general electrical engineering,
+                we provide comprehensive solutions. Our expertise covers
+                electrical maintenance, cable termination, and solar system
+                maintenance to ensure reliable power for your business or home.
               </p>
             </div>
           </div>
+
+          {/* Card 3: Mining & Industrial Supplies */}
           <div className="col-md-6 col-xl-3">
             <div className="feature-card th-ani">
               <div className="box-icon">
-                <img src="assets/img/icon/feature_1_3.svg" alt="Icon" />
+                <img
+                  src="/assets/img/icon/feature_1_3.svg"
+                  alt="Supplies Icon"
+                />
               </div>
               <h3 className="box-title">
-                <a href="service-details.html">Home Appliance</a>
+                <a href="#">Mining & Industrial Supplies</a>
               </h3>
               <p className="box-text">
-                A home appliance refers to any electrical or mechanical device
-                that assists in household tasks making daily life more
-                convenient
+                We supply a wide range of industrial and mining products. As an
+                added benefit, clients who purchase our products are eligible
+                for discounted installation services, making your setup process
+                smooth and cost-effective.
               </p>
             </div>
           </div>
+
+          {/* Card 4: Maintenance & Commissioning */}
           <div className="col-md-6 col-xl-3">
             <div className="feature-card th-ani">
               <div className="box-icon">
-                <img src="assets/img/icon/feature_1_4.svg" alt="Icon" />
+                <img
+                  src="/assets/img/icon/feature_1_4.svg"
+                  alt="Maintenance Icon"
+                />
               </div>
               <h3 className="box-title">
-                <a href="service-details.html">Easy Installation</a>
+                <a href="#">Maintenance & Commissioning</a>
               </h3>
               <p className="box-text">
-                Easy installation refers to the process of setting up or
-                assembling a product, system, or device with minimal the effort.
+                Our team provides thorough maintenance and commissioning
+                services for all systems we install. This includes regular
+                check-ups, fault diagnosis, and system optimization to ensure
+                peak performance and longevity.
               </p>
             </div>
           </div>
