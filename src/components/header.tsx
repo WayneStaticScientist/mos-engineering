@@ -58,7 +58,10 @@ export default function Header() {
                 <div className="col-auto">
                   <div className="header-logo">
                     <a href="home-solar-energy.html">
-                      <img src="/assets/img/logo-white.png" alt="Solak " />
+                      <img
+                        src="/assets/img/logo-white.png"
+                        alt="Mos-Engineering "
+                      />
                     </a>
                   </div>
                 </div>

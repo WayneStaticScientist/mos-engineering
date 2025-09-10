@@ -1,3 +1,4 @@
+import { Constants } from "@/lib/utils";
 import React from "react";
 
 export default function Footer() {
@@ -5,7 +6,7 @@ export default function Footer() {
     <>
       <footer
         className="footer-wrapper bg-title footer-layout1"
-        data-bg-src="assets/img/bg/dot-shape.png"
+        data-bg-src="/assets/img/bg/dot-shape.png"
       >
         <div className="widget-area">
           <div className="container">
@@ -14,15 +15,18 @@ export default function Footer() {
                 <div className="widget footer-widget">
                   <div className="th-widget-about">
                     <div className="about-logo">
-                      <a className="" href="index.html">
-                        <img src="assets/img/logo.svg" alt="Solak " />
+                      <a className="" href="/">
+                        <img
+                          src="/assets/img/logo-white.png"
+                          alt="Mos-Engineering Logo"
+                        />
                       </a>
                     </div>
                     <p className="about-text">
-                      Solar energy is renewable and inexhaustible, making it a
-                      sustainable solution for meeting energy demands. energy
-                      usage to design the ideal solar solution for your
-                      property.
+                      We specialize in providing robust electrical, automation,
+                      and project management solutions for the industrial and
+                      mining sectors. Our expertise ensures your operations are
+                      safe, efficient, and built for the future.
                     </p>
                     <div className="th-social">
                       <a href="https://www.facebook.com/">
@@ -47,19 +51,18 @@ export default function Footer() {
                   <div className="menu-all-pages-container">
                     <ul className="menu">
                       <li>
-                        <a href="about.html">About Us</a>
+                        <a href="/about">About Us</a>
                       </li>
                       <li>
-                        <a href="service.html">Services</a>
+                        <a href="/services">Services</a>
                       </li>
+
                       <li>
-                        <a href="project.html">projects</a>
+                        <a href="/shop">Shop</a>
                       </li>
+
                       <li>
-                        <a href="blog.html">Blog</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="/contact">Contact Us</a>
                       </li>
                     </ul>
                   </div>
@@ -71,19 +74,19 @@ export default function Footer() {
                   <div className="menu-all-pages-container">
                     <ul className="menu">
                       <li>
-                        <a href="service.html">Renewable Energy</a>
+                        <a href="#">Electrical Solutions</a>
                       </li>
                       <li>
-                        <a href="service.html">Wind Generator</a>
+                        <a href="#">Mining Automation</a>
                       </li>
                       <li>
-                        <a href="service.html">Solar Energy</a>
+                        <a href="#">Industrial Maintenance</a>
                       </li>
                       <li>
-                        <a href="service.html">Hydropower Energy</a>
+                        <a href="#">Safety & Compliance</a>
                       </li>
                       <li>
-                        <a href="service.html">Eco Maintenance</a>
+                        <a href="#">Project Management</a>
                       </li>
                     </ul>
                   </div>
@@ -96,14 +99,17 @@ export default function Footer() {
                     <h4 className="footer-info-title">Address Location</h4>
                     <p className="footer-info">
                       <i className="fas fa-map-marker-alt" />
-                      Orlando City, USA
+                      {Constants.ADDRESS}
                     </p>
                     <h4 className="footer-info-title">Phone Number</h4>
                     <p className="footer-info">
                       <i className="fa-sharp fa-solid fa-phone" />
                       <span>
-                        <a className="text-inherit" href="tel:+19524357106">
-                          +1 952-435-7106
+                        <a
+                          className="text-inherit"
+                          href={`${Constants.PHONE_NUMBERS[0]}}`}
+                        >
+                          {Constants.PHONE_NUMBERS[0]}
                         </a>
                       </span>
                     </p>
@@ -113,9 +119,9 @@ export default function Footer() {
                       <span>
                         <a
                           className="text-inherit"
-                          href="mailto:info@solak.com"
+                          href={`mailto:${Constants.EMAIL_ADDRESS}`}
                         >
-                          info@solak.com
+                          {Constants.EMAIL_ADDRESS}
                         </a>
                       </span>
                     </p>
@@ -125,7 +131,7 @@ export default function Footer() {
               <div className="col-md-6 col-xl-auto">
                 <div className="widget footer-widget">
                   <h3 className="widget_title">Recent Posts</h3>
-                  <div className="recent-post-wrap">
+                  {/* <div className="recent-post-wrap">
                     <div className="recent-post">
                       <div className="media-img">
                         <a href="blog-details.html">
@@ -137,11 +143,11 @@ export default function Footer() {
                       </div>
                       <div className="media-body">
                         <div className="recent-post-meta">
-                          <a href="blog.html">2 March, 2025</a>
+                          <a href="blog.html">5 September, 2024</a>
                         </div>
                         <h4 className="post-title">
                           <a className="text-inherit" href="blog-details.html">
-                            Metal Roofing The Best for Solar Panels
+                            The Future of Mining Automation
                           </a>
                         </h4>
                       </div>
@@ -157,16 +163,16 @@ export default function Footer() {
                       </div>
                       <div className="media-body">
                         <div className="recent-post-meta">
-                          <a href="blog.html">3 March, 2025</a>
+                          <a href="blog.html">12 August, 2024</a>
                         </div>
                         <h4 className="post-title">
                           <a className="text-inherit" href="blog-details.html">
-                            Metal Roofing The Best for Solar Panels
+                            Best Practices for Industrial Electrical Safety
                           </a>
                         </h4>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -174,9 +180,9 @@ export default function Footer() {
         </div>
         <div className="copyright-wrap text-center">
           <p className="copyright-text">
-            Copyright <i className="fal fa-copyright" /> 2025
-            <a href="https://themeforest.net/user/themeholy">Solak </a>. All
-            Rights Reserved.
+            Copyright <i className="fal fa-copyright" />
+            {new Date().getFullYear()}
+            <a href="#"> Mos-Engineering </a>. All Rights Reserved.
           </p>
         </div>
       </footer>

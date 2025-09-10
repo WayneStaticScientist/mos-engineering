@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RequestQoute() {
+export default function RequestQuote() {
   return (
     <section className="overflow-hidden">
       <div className="container">
@@ -10,18 +10,20 @@ export default function RequestQoute() {
               <div className="title-area mb-0 text-xl-start pe-xxl-5 me-xxl-5 space">
                 <span className="sub-title">Request A Quote</span>
                 <h2 className="sec-title text-white">
-                  Talk About How We Can Help You Reduce Your Energy
+                  Let's Talk About Your Industrial and Mining Challenges
                 </h2>
                 <p className="sec-desc me-xl-5">
-                  Costs and successfully manage your carbon emissions with
-                  investment free solar technologies.
+                  Connect with our team of experts to discuss your project
+                  needs. We provide tailored electrical, automation, and mining
+                  services that optimize your operations and ensure long-term
+                  reliability and safety.
                 </p>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="appointment-area-wrapper">
                 <form
-                  action="https://html.themeholy.com/solak/demo/mail.php"
+                  action="#"
                   method="POST"
                   className="appointment-form input-smoke ajax-contact"
                 >
