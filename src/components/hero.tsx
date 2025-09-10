@@ -1,4 +1,5 @@
 import { HeroSliderContent } from "@/lib/tools-hero-slider";
+import Link from "next/link";
 import React from "react";
 
 export default function HeroSection() {
@@ -43,14 +44,14 @@ export default function HeroSection() {
                       data-ani="slideinup"
                       data-ani-delay="0.6s"
                     >
-                      <a href="/" className="th-btn style1 th-icon">
+                      <Link href="/" className="th-btn style1 th-icon">
                         <span
                           className="btn-text"
                           data-back="Become A member"
                           data-front="Become A member"
                         />
                         <i className="fa-regular fa-arrow-right ms-2" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

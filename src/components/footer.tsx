@@ -1,4 +1,5 @@
 import { Constants } from "@/lib/utils";
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -15,12 +16,12 @@ export default function Footer() {
                 <div className="widget footer-widget">
                   <div className="th-widget-about">
                     <div className="about-logo">
-                      <a className="" href="/">
+                      <Link className="" href="/">
                         <img
                           src="/assets/img/logo-white.png"
                           alt="Mos-Engineering Logo"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <p className="about-text">
                       We specialize in providing robust electrical, automation,
