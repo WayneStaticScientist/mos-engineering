@@ -20,9 +20,9 @@ export default function Header() {
               <div className="col-auto d-none d-md-block">
                 <div className="header-links">
                   <ul>
-                    <li className="d-none d-xl-inline-block">
-                      <i className="fa-light fa-clock" />
-                      <span>Mon - Sun 24hrs</span>
+                    <li className="d-none d-xl-inline-block tw:text-white!">
+                      <i className="fa-light fa-clock tw:text-white!" />
+                      <span className="tw:text-white!">Mon - Sun 24hrs</span>
                     </li>
                     <li className="">
                       <i className="fa-sharp fa-regular fa-location-dot" />

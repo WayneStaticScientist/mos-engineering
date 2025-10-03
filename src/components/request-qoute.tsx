@@ -8,7 +8,7 @@ export default function RequestQuote() {
           <div className="row">
             <div className="col-lg-6">
               <div className="title-area mb-0 text-xl-start pe-xxl-5 me-xxl-5 space">
-                <span className="sub-title">Request A Quote</span>
+                <span className="tw:text-white!">Request A Quote</span>
                 <h2 className="sec-title text-white">
                   Let's Talk About Your Industrial and Mining Challenges
                 </h2>
@@ -86,7 +86,7 @@ export default function RequestQuote() {
             data-bottom="0%"
             data-right="-10%"
           >
-            <img src="assets/img/shape/shape-2.png" alt="" />
+            <img src="/assets/img/shape/shape-2.png" alt="" />
           </div>
         </div>
       </div>

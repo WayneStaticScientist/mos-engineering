@@ -2,8 +2,8 @@
 :root {
   --theme-color: #57b33e;
   --theme-color2: #57b33e;
-  --title-color: #0e121d;
-  --body-color: #4d5765;
+  --title-color: #57b33e;
+  --body-color: #57b33e;
   --smoke-color: #e0e0e0;
   --smoke-color2: #f8f8f8;
   --smoke-color3: #c5dacc;
@@ -44,7 +44,7 @@ body.theme-bg {
   background-color: #f0efe9;
 }
 body.theme2 {
-  --theme-color: #fffa84;
+  --theme-color: #57b33e;
   --theme-color2: #57b33e;
 }
 iframe {
@@ -5506,7 +5506,7 @@ ol.widget_recent_comments,
   content: "";
   position: absolute;
   inset: 0;
-  background: #010f1c;
+  background: #57b33e;
   opacity: 0.9;
   border-radius: 30px;
   z-index: -1;
@@ -6780,7 +6780,7 @@ ol.widget_recent_comments,
   }
 }
 .header-top {
-  background-color: #010f1c;
+  background-color: #57b33e;
   padding: 10.7px 0;
   --body-color: #fff;
 }
@@ -6877,7 +6877,7 @@ ol.widget_recent_comments,
   width: 17.9%;
   height: 82.73px;
   z-index: -1;
-  background-color: #010f1c;
+  background-color: #57b33e;
 }
 @media (min-width: 1930px) {
   .header-layout1 .logo-bg {
@@ -8873,7 +8873,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
   line-height: 20px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #010f1c;
+  color: #57b33e;
   display: block;
   padding: 15px 22px 15px 33px;
   background-image: url("/assets/img/shape/hero-shape3.png");
@@ -9042,7 +9042,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
   content: "";
   position: absolute;
   inset: 0;
-  background: #010f1c;
+  background: #57b33e;
   opacity: 0.65;
 }
 .hero-3 .slider-arrow {
@@ -13818,7 +13818,7 @@ span.select2-selection.select2-selection--single:focus {
   font-size: 20px;
   text-align: center;
   text-transform: capitalize;
-  color: #010f1c;
+  color: #57b33e;
 }
 .about-profile.style2 .box-title {
   font-size: 30px;
@@ -17050,7 +17050,7 @@ span.select2-selection.select2-selection--single:focus {
   font-weight: 600;
   font-size: 30px;
   letter-spacing: 0.02em;
-  color: #010f1c;
+  color: #57b33e;
 }
 @media (max-width: 1500px) {
   .blog-grid.style2 .box-title {
@@ -17079,7 +17079,7 @@ span.select2-selection.select2-selection--single:focus {
   font-size: 30px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: #010f1c;
+  color: #57b33e;
   margin-bottom: 20px;
 }
 @media (max-width: 1500px) {
@@ -23231,7 +23231,7 @@ span.select2-selection.select2-selection--single:focus {
   font-size: 48px;
   line-height: 58px;
   text-transform: capitalize;
-  color: #010f1c;
+  color: #57b33e;
 }
 @media (max-width: 767px) {
   .feature-timeline
@@ -23560,7 +23560,7 @@ span.select2-selection.select2-selection--single:focus {
   font-size: 30px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: #010f1c;
+  color: #57b33e;
   display: block;
 }
 .choose-progress-bar .text {

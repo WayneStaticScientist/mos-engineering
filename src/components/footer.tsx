@@ -23,7 +23,7 @@ export default function Footer() {
                         />
                       </Link>
                     </div>
-                    <p className="about-text">
+                    <p className="about-text tw:text-white!">
                       We specialize in providing robust electrical, automation,
                       and project management solutions for the industrial and
                       mining sectors. Our expertise ensures your operations are
@@ -52,42 +52,60 @@ export default function Footer() {
                   <div className="menu-all-pages-container">
                     <ul className="menu">
                       <li>
-                        <a href="/about">About Us</a>
+                        <a href="/about" className="tw:text-white!">
+                          About Us
+                        </a>
                       </li>
                       <li>
-                        <a href="/services">Services</a>
+                        <a href="/services" className="tw:text-white!">
+                          Services
+                        </a>
                       </li>
 
                       <li>
-                        <a href="/shop">Shop</a>
+                        <a href="/shop" className="tw:text-white!">
+                          Shop
+                        </a>
                       </li>
 
                       <li>
-                        <a href="/contact">Contact Us</a>
+                        <a href="/contact" className="tw:text-white!">
+                          Contact Us
+                        </a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-xl-auto">
-                <div className="widget widget_nav_menu footer-widget">
+              <div className="col-md-6 col-xl-auto tw:text-white!">
+                <div className="widget widget_nav_menu footer-widget tw:text-white!">
                   <h3 className="widget_title">Our Services</h3>
-                  <div className="menu-all-pages-container">
-                    <ul className="menu">
+                  <div className="menu-all-pages-container tw:text-white!">
+                    <ul className="menu tw:text-white!">
                       <li>
-                        <a href="#">Electrical Solutions</a>
+                        <a href="#" className="tw:text-white!">
+                          Electrical Solutions
+                        </a>
                       </li>
                       <li>
-                        <a href="#">Mining Automation</a>
+                        <a href="#" className="tw:text-white!">
+                          Mining Automation
+                        </a>
                       </li>
                       <li>
-                        <a href="#">Industrial Maintenance</a>
+                        <a href="#" className="tw:text-white!">
+                          Industrial Maintenance
+                        </a>
                       </li>
                       <li>
-                        <a href="#">Safety & Compliance</a>
+                        <a href="#" className="tw:text-white!">
+                          Safety & Compliance
+                        </a>
                       </li>
                       <li>
-                        <a href="#">Project Management</a>
+                        <a href="#" className="tw:text-white!">
+                          Project Management
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -97,9 +115,11 @@ export default function Footer() {
                 <div className="widget footer-widget">
                   <h3 className="widget_title">Contact Us</h3>
                   <div className="th-widget-about">
-                    <h4 className="footer-info-title">Address Location</h4>
-                    <p className="footer-info">
-                      <i className="fas fa-map-marker-alt" />
+                    <h4 className="footer-info-title tw:text-white!">
+                      Address Location
+                    </h4>
+                    <p className="footer-info tw:text-white!">
+                      <i className="fas fa-map-marker-alt tw:text-white!" />
                       {Constants.ADDRESS}
                     </p>
                     <h4 className="footer-info-title">Phone Number</h4>
@@ -107,7 +127,7 @@ export default function Footer() {
                       <i className="fa-sharp fa-solid fa-phone" />
                       <span>
                         <a
-                          className="text-inherit"
+                          className="tw:text-white!"
                           href={`${Constants.PHONE_NUMBERS[0]}}`}
                         >
                           {Constants.PHONE_NUMBERS[0]}
@@ -119,7 +139,7 @@ export default function Footer() {
                       <i className="fa-sharp fa-solid fa-envelope" />
                       <span>
                         <a
-                          className="text-inherit"
+                          className="tw:text-white!"
                           href={`mailto:${Constants.EMAIL_ADDRESS}`}
                         >
                           {Constants.EMAIL_ADDRESS}
@@ -147,7 +167,7 @@ export default function Footer() {
                           <a href="blog.html">5 September, 2024</a>
                         </div>
                         <h4 className="post-title">
-                          <a className="text-inherit" href="blog-details.html">
+                          <a className="tw:text-white!" href="blog-details.html">
                             The Future of Mining Automation
                           </a>
                         </h4>
@@ -167,7 +187,7 @@ export default function Footer() {
                           <a href="blog.html">12 August, 2024</a>
                         </div>
                         <h4 className="post-title">
-                          <a className="text-inherit" href="blog-details.html">
+                          <a className="tw:text-white!" href="blog-details.html">
                             Best Practices for Industrial Electrical Safety
                           </a>
                         </h4>
@@ -179,11 +199,14 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="copyright-wrap text-center">
-          <p className="copyright-text">
-            Copyright <i className="fal fa-copyright" />
+        <div className="copyright-wrap text-center tw:bg-white!">
+          <p className="copyright-text tw:text-black!">
+            Copyright <i className="fal fa-copyright tw:text-black!" />
             {new Date().getFullYear()}
-            <a href="#"> Mos-Engineering </a>. All Rights Reserved.
+            <a href="#" className="tw:text-black!">
+              Mos-Engineering
+            </a>
+            . All Rights Reserved.
           </p>
         </div>
       </footer>
