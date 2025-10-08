@@ -1,12 +1,15 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+"use client";
 import "./globals.css";
 import "./assets/css/style.css";
 import "./assets/css/bootstrap.min.css";
 import "./assets/css/fontawesome.min.css";
 import "./assets/css/swiper-bundle.min.css";
 import "./assets/css/magnific-popup.min.css";
+import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import { Toaster } from "react-hot-toast";
+import { useSessionState } from "@/stores/use-userstate";
+import { useEffect } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,26 +21,35 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "MOS-Engineering",
-    template: "%s | MOS-Engineering",
-  },
-  description:
-    "We are a leading provider of comprehensive electrical engineering, industrial supplies, and renewable energy solutions in Zimbabwe. From complex automation to sustainable power, we deliver reliability and expertise to keep your business moving forward",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = useSessionState();
+  useEffect(() => {
+    session.initializeUser();
+  }, []);
   return (
     <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Mos-Engineering Industrial & Electrical Services"
+        />
+        <meta
+          name="keywords"
+          content="Mos-Engineering, industrial, electrical, automation, solar, engineering, mining, PLC, HMI, SCADA"
+        />
+        <title>Mos-Engineering Industrial & Electrical Services</title>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Toaster />
+        {session.isVerified ? <>{children}</> : <></>}
         <Script src="/assets/js/vendor/jquery-3.7.1.min.js"></Script>
         <Script src="/assets/js/swiper-bundle.min.js"></Script>
         <Script src="/assets/js/bootstrap.min.js"></Script>
