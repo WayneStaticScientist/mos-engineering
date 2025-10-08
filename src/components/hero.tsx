@@ -1,8 +1,11 @@
+"use client";
 import { HeroSliderContent } from "@/lib/tools-hero-slider";
+import { useSessionState } from "@/stores/use-userstate";
 import Link from "next/link";
 import React from "react";
 
 export default function HeroSection() {
+  const session = useSessionState();
   return (
     <div className="th-hero-wrapper hero-1" id="hero">
       <div
@@ -44,13 +47,32 @@ export default function HeroSection() {
                       data-ani="slideinup"
                       data-ani-delay="0.6s"
                     >
-                      <Link href="/" className="th-btn style1 th-icon">
-                        <span
-                          className="btn-text"
-                          data-back="Become A member"
-                          data-front="Become A member"
-                        />
-                        <i className="fa-regular fa-arrow-right ms-2" />
+                      <Link
+                        href={
+                          session.loading || session.loggedIn
+                            ? "#"
+                            : "/register"
+                        }
+                        className="th-btn style1 th-icon"
+                      >
+                        {session.loggedIn ? (
+                          <>Welcome {session.user.name}</>
+                        ) : (
+                          <>
+                            {session.loading ? (
+                              <>Verifying User...</>
+                            ) : (
+                              <>
+                                <span
+                                  className="btn-text"
+                                  data-back="Become A member"
+                                  data-front="Become A member"
+                                />
+                                <i className="fa-regular fa-arrow-right ms-2" />
+                              </>
+                            )}
+                          </>
+                        )}
                       </Link>
                     </div>
                   </div>
