@@ -1,11 +1,14 @@
+"use client";
 import React from "react";
 import { Constants } from "@/lib/utils";
 import SearchMenu from "./ui/search-menu";
 import MenuWrapper from "./ui/menu-wrapper";
 import SideMenuWrapper from "./ui/side-menu-wrapper";
 import Link from "next/link";
+import { useSessionState } from "@/stores/use-userstate";
 
 export default function Header() {
+  const session = useSessionState();
   return (
     <>
       <>
@@ -105,6 +108,11 @@ export default function Header() {
                       <li>
                         <a href="/contact">Contact</a>
                       </li>
+                      {session.loggedIn && session.user.role === "admin" && (
+                        <li>
+                          <a href="/upload">Upload</a>
+                        </li>
+                      )}
                     </ul>
                   </nav>
                   <div className="header-button">

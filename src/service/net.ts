@@ -2,8 +2,11 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import UserSchema from "@/models/user-model";
-import { TUser } from "@/types/t-user";
+import ProductSchema from "@/models/product-model";
+import { TProduct, TUser } from "@/types/t-user";
 import { CoonectToDb } from "./mongoconnect";
+import { PutObjectCommand } from "@aws-sdk/client-s3";
+import { r2 } from "@/lib/r2";
 export const registerUser = async (
   user: TUser,
   deviceId: string
@@ -162,3 +165,75 @@ export const getAdminStats = async (
   }
   return { message: "Invalid token or error occurred", error: true };
 };
+
+export const uploadProduct = async (
+  claimId: string,
+  deviceId: string,
+  formData: FormData
+): Promise<{
+  message?: string;
+  success?: boolean;
+}> => {
+  try {
+    await CoonectToDb();
+    const decoded = jwt.verify(claimId, `${process.env.NEXT_PUBLIC_TOKEN_KEY}`);
+    if (!decoded || (decoded as any).deviceId !== deviceId) {
+      return { message: "Unauthorized access", success: false };
+    }
+    const file = formData.get("file") as File | null;
+    let fileKey = "";
+    const fileExtension = file!.name.split(".").pop();
+    fileKey = `uploads/${nanoid()}.${fileExtension}`; // This is the R2 "path"
+
+    const bytes = await file!.arrayBuffer();
+    const buffer = Buffer.from(bytes);
+
+    // 2. Upload to R2
+    const command = new PutObjectCommand({
+      Bucket: process.env.NEXT_PUBLIC_R2_BUCKET_NAME!,
+      Key: fileKey,
+      Body: buffer,
+      ContentType: "img/jpeg",
+    });
+    await r2.send(command);
+    const product: TProduct = {
+      itemName: formData.get("itemName") as string,
+      price: formData.get("price") as string,
+      description: formData.get("description") as string,
+      path: fileKey,
+    };
+    await ProductSchema.create(product);
+    return {
+      success: true,
+    };
+  } catch (error) {
+    console.log("invalid token error or ", error);
+    return {
+      message: `Registration exited with error `,
+    };
+  }
+};
+function nanoid() {
+  return Date.now().toString(36) + Math.random().toString(36).substring(2);
+}
+export async function getProducts(page: number): Promise<TProduct[]> {
+  try {
+    CoonectToDb();
+    const pageSize = 10;
+    const skip = (page - 1) * pageSize;
+    const products = await ProductSchema.find().skip(skip).limit(pageSize);
+    return products.map((product) => product.toObject());
+  } catch (e) {
+    console.log(e);
+    return [];
+  }
+}
+export async function getProductById(id: string): Promise<TProduct | null> {
+  try {
+    await CoonectToDb();
+    const product = await ProductSchema.findById(id);
+    return product ? product.toObject() : null;
+  } catch (e) {
+    return null;
+  }
+}
