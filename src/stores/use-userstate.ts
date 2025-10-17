@@ -98,7 +98,7 @@ export const useSessionState = create<{
       if (get().user.name.trim().split(" ").length < 2) {
         return error("Please enter fullname");
       }
-      if (get().user.email.trim().split(" ").length < 2) {
+      if (get().user.email.trim().length < 2) {
         return error("Please enter email");
       }
       set((state) => {
