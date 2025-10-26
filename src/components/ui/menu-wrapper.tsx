@@ -1,7 +1,10 @@
+"use client"
 import Link from "next/link";
 import React from "react";
+import { useSessionState } from "@/stores/use-userstate";
 
 export default function MenuWrapper() {
+  const session = useSessionState();
   return (
     <div className="th-menu-wrapper">
       <div className="th-menu-area text-center">
