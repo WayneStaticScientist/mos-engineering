@@ -1,7 +1,10 @@
+"use client"
 import Link from "next/link";
 import React from "react";
+import { useSessionState } from "@/stores/use-userstate";
 
 export default function MenuWrapper() {
+  const session = useSessionState();
   return (
     <div className="th-menu-wrapper">
       <div className="th-menu-area text-center">
@@ -52,6 +55,11 @@ export default function MenuWrapper() {
             <li>
               <a href="/contact">Contact</a>
             </li>
+            {session.loggedIn && session.user.role === "admin" && (
+                        <li>
+                          <a href="/upload">Upload</a>
+                        </li>
+                      )}
           </ul>
         </div>
       </div>
