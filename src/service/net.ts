@@ -18,15 +18,15 @@ export const registerUser = async (
 }> => {
   try {
     await CoonectToDb();
-    console.log("logging with user ", user);
     const count = await UserSchema.countDocuments({
-      phoneNumber: user.phoneNumber,
+      email: user.email,
     });
     if (count > 0) {
       return {
-        message: `user with phonenumber ${user.phoneNumber} already exists`,
+        message: `user with email ${user.email} already exists`,
       };
     }
+    user.email = user.email.trim();
     user.role = "client";
     const salt = await bcrypt.genSalt(10);
     user.password = await bcrypt.hash(user.password, salt);
