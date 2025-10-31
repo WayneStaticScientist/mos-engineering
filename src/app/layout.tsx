@@ -30,6 +30,21 @@ export default function RootLayout({
   useEffect(() => {
     session.initializeUser();
   }, []);
+  useEffect(() => {
+    if (document.querySelector('#my-runtime-script')) {
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = '/assets/js/main.js'; 
+    script.id = 'my-runtime-script'; 
+    script.onload = () => {
+      console.log('my-runtime-script.js has loaded and executed!');
+      if (typeof window.myGlobalFunction === 'function') {
+        window.myGlobalFunction();
+      }
+    };
+    document.body.appendChild(script);
+  }, []);
   return (
     <html lang="en">
       <head>
