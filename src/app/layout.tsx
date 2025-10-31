@@ -39,9 +39,6 @@ export default function RootLayout({
     script.id = 'my-runtime-script'; 
     script.onload = () => {
       console.log('my-runtime-script.js has loaded and executed!');
-      if (typeof window.myGlobalFunction === 'function') {
-        window.myGlobalFunction();
-      }
     };
     document.body.appendChild(script);
   }, []);
