@@ -67,8 +67,10 @@
         })), t(".onepage-nav"), t(".scroll-down"), e(".scroll-top")) {
         var a = document.querySelector(".scroll-top"),
             n = document.querySelector(".scroll-top path");
-         if(n)
-           let i = n.getTotalLength();
+        let i = 0;
+         if(n){
+           i = n.getTotalLength();
+         }
         n.style.transition = n.style.WebkitTransition = "none", n.style.strokeDasharray = i + " " + i, n.style.strokeDashoffset = i, n.getBoundingClientRect(), n.style.transition = n.style.WebkitTransition = "stroke-dashoffset 10ms linear";
         var s = function() {
             var t = e(window).scrollTop(),
