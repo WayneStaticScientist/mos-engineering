@@ -1,8 +1,10 @@
+"use client";
 import { Constants } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
-
+import { useSessionState } from "@/stores/use-userstate";
 export default function Footer() {
+   const session = useSessionState();
   return (
     <>
       <footer
@@ -73,6 +75,11 @@ export default function Footer() {
                           Contact Us
                         </a>
                       </li>
+                         {session.loggedIn && session.user.role === "admin" && (
+                        <li>
+                          <a href="/upload">Upload</a>
+                        </li>
+                      )}
                     </ul>
                   </div>
                 </div>
