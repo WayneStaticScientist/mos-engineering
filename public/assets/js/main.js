@@ -70,13 +70,15 @@
         let i = 0;
          if(n){
            i = n.getTotalLength();
+           n.style.transition = n.style.WebkitTransition = "none", n.style.strokeDasharray = i + " " + i, n.style.strokeDashoffset = i, n.getBoundingClientRect(), n.style.transition = n.style.WebkitTransition = "stroke-dashoffset 10ms linear";
          }
-        n.style.transition = n.style.WebkitTransition = "none", n.style.strokeDasharray = i + " " + i, n.style.strokeDashoffset = i, n.getBoundingClientRect(), n.style.transition = n.style.WebkitTransition = "stroke-dashoffset 10ms linear";
         var s = function() {
             var t = e(window).scrollTop(),
                 a = e(document).height() - e(window).height(),
                 s = i - t * i / a;
-            n.style.strokeDashoffset = s
+            if(n){
+                n.style.strokeDashoffset = s
+            }
         };
         s(), e(window).scroll(s);
         jQuery(window).on("scroll", (function() {
