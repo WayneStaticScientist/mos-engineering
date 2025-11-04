@@ -118,9 +118,6 @@ export const getUser = async (
       email: (decoded as jwt.JwtPayload).email,
     });
     const { password: _password, token: _token, ...rest } = user.toObject();
-    console.log(rest);
-    console.log("================");
-    console.log(user);
     return { message: "login success", success: true, user: rest };
   } catch (error) {
     console.log("invalid token error or ", error);
