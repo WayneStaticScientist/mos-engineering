@@ -6,9 +6,12 @@ import MenuWrapper from "./ui/menu-wrapper";
 import SideMenuWrapper from "./ui/side-menu-wrapper";
 import Link from "next/link";
 import { useSessionState } from "@/stores/use-userstate";
-
+import { useEffect } from "react";
 export default function Header() {
   const session = useSessionState();
+  useEffect(() => {
+    session.initializeUser();
+  }, []);
   return (
     <>
       <>
