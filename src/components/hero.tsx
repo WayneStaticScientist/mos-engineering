@@ -55,7 +55,7 @@ export default function HeroSection() {
                         }
                         className="th-btn style1 th-icon"
                       >
-                        {session.loggedIn ? (
+                        {/* {session.loggedIn ? (
                           <>Welcome {session.user.name}</>
                         ) : (
                           <>
@@ -72,7 +72,7 @@ export default function HeroSection() {
                               </>
                             )}
                           </>
-                        )}
+                        )} */}
                       </Link>
                     </div>
                   </div>
