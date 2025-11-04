@@ -89,6 +89,7 @@ export const useSessionState = create<{
       }
       set((state) => {
         state.user = JSON.parse(user);
+        console.log("the user is "+state.user);
         state.isVerified = true;
         state.loading = false;
         state.loggedIn = true;
