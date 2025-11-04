@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   const session = useSessionState();
   useEffect(() => {
-    //session.initializeUser();
+     session.initializeUser();
   }, []);
   useEffect(() => {
     if (document.querySelector('#my-runtime-script')) {
@@ -61,7 +61,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Toaster />
-        {session.isVerified ? <>{children}</> : <></>}
+       <>{children}</>
         <Script src="/assets/js/vendor/jquery-3.7.1.min.js"></Script>
         <Script src="/assets/js/swiper-bundle.min.js"></Script>
         <Script src="/assets/js/bootstrap.min.js"></Script>
