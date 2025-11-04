@@ -9,7 +9,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { Toaster } from "react-hot-toast";
 import { useSessionState } from "@/stores/use-userstate";
-import { useEffect } from "react";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
