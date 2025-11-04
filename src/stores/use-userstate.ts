@@ -74,7 +74,7 @@ export const useSessionState = create<{
       set((state) => {
         state.loading = true;
       });
-      const response = await getUser(token, get().getDeviceId());
+      const response= await getUser(token, get().getDeviceId());
       if (!response.success) {
         set((state) => {
           state.isVerified = true;
@@ -88,7 +88,7 @@ export const useSessionState = create<{
         return;
       }
       set((state) => {
-        state.user = response.user;
+        state.user = response.user!;
         state.isVerified = true;
         state.loading = false;
         state.loggedIn = true;
