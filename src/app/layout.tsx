@@ -8,7 +8,7 @@ import "./assets/css/magnific-popup.min.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { Toaster } from "react-hot-toast";
-import { useSessionState } from "@/stores/use-userstate";
+
 
 
 const geistSans = Geist({
@@ -26,7 +26,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const session = useSessionState();
+
   // useEffect(() => {
   //    session.initializeUser();
   // }, []);
