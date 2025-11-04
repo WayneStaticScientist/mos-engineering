@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   const session = useSessionState();
   useEffect(() => {
-    session.initializeUser();
+    //session.initializeUser();
   }, []);
   useEffect(() => {
     if (document.querySelector('#my-runtime-script')) {
