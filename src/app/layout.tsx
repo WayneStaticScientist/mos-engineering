@@ -1,4 +1,4 @@
-"use client";
+
 import "./globals.css";
 import "./assets/css/style.css";
 import "./assets/css/bootstrap.min.css";
@@ -27,21 +27,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const session = useSessionState();
-  useEffect(() => {
-     session.initializeUser();
-  }, []);
-  useEffect(() => {
-    if (document.querySelector('#my-runtime-script')) {
-      return;
-    }
-    const script = document.createElement('script');
-    script.src = '/assets/js/main.js'; 
-    script.id = 'my-runtime-script'; 
-    script.onload = () => {
-      console.log('my-runtime-script.js has loaded and executed!');
-    };
-    document.body.appendChild(script);
-  }, []);
+  // useEffect(() => {
+  //    session.initializeUser();
+  // }, []);
+  // useEffect(() => {
+  //   if (document.querySelector('#my-runtime-script')) {
+  //     return;
+  //   }
+  //   const script = document.createElement('script');
+  //   script.src = '/assets/js/main.js'; 
+  //   script.id = 'my-runtime-script'; 
+  //   script.onload = () => {
+  //     console.log('my-runtime-script.js has loaded and executed!');
+  //   };
+  //   document.body.appendChild(script);
+  // }, []);
   return (
     <html lang="en">
       <head>
