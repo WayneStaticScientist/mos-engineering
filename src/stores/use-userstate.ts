@@ -88,11 +88,11 @@ export const useSessionState = create<{
         return;
       }
       set((state) => {
-        state.user = JSON.parse(user);
-  
+        state.user = response.user;
         state.isVerified = true;
         state.loading = false;
         state.loggedIn = true;
+        localStorage.setItem("user", JSON.stringify(response.user));
       });
     },
     registerUser: async () => {
