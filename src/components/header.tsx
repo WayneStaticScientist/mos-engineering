@@ -111,7 +111,7 @@ export default function Header() {
                       <li>
                         <a href="/contact">Contact</a>
                       </li>
-                    {session.loggedIn && session.user.role === "admin" && (
+                    {session.user.role == "admin" && (
                         <li>
                           <a href="/upload">Upload</a>
                         </li>
