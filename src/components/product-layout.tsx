@@ -13,8 +13,7 @@ export default function ProductLayout({ product }: { product: TProduct }) {
           height={500}
         />
         <p className="box-text2">{product.itemName}</p>
-        <h4 className="box-price">${product.price}</h4>
-        <div className="box-content">
+         <div className="box-content">
           <div className="available-list">
             {product.description.length > 200
               ? product.description.slice(0, 200) + "..."

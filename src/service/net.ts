@@ -198,7 +198,7 @@ export const uploadProduct = async (
     await r2.send(command);
     const product: TProduct = {
       itemName: formData.get("itemName") as string,
-      price: formData.get("price") as string,
+      price: 0,
       description: formData.get("description") as string,
       path: fileKey,
     };

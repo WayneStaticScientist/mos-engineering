@@ -45,8 +45,7 @@ export default function ProductViewPage() {
               <div className="col-lg-6 align-self-center">
                 <div className="product-about">
                   <h2 className="product-title">{product.itemName}</h2>
-                  <p className="price">${product.price}</p>
-                  <p className="product-text">{product.description}</p>
+                    <p className="product-text">{product.description}</p>
                   <div className="product-actions">
                     <button
                       className="th-btn"

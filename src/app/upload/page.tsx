@@ -71,17 +71,6 @@ export default function UploadPage() {
                     required
                   />
                 </div>
-                <div className="form-group col-md-12">
-                  <input
-                    type="number"
-                    className="form-control"
-                    name="price"
-                    id="price"
-                    placeholder="Price"
-                    step="0.01"
-                    required
-                  />
-                </div>
                 <div className="form-group col-12">
                   <textarea
                     name="description"
